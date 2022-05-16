@@ -11,7 +11,15 @@
 */
 
 
+require_once __DIR__ . '/classes/registeredUser.php';
+require_once __DIR__ . '/classes/product.php';
+require_once __DIR__ . '/classes/creditCard.php';
 
+//Product
+$new_product = new Product("Collare antiparassitario", 25);
+$new_product->setBrand("Scalibor");
+
+var_dump($new_product);
 
 
 ?>
