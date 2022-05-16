@@ -28,6 +28,7 @@ class CreditCard {
         return $cvv;
       }
 
+
     //SET
     public function setNumber($_number){
         $this->number = $_number;
@@ -37,12 +38,12 @@ class CreditCard {
         $this->cvvr = $_cvv;
     }
 
-    public function setExpiration_m($_expiration_month){
-        $this->expiration_m = $_expiration_m;
+    public function setExpiration_month($_expiration_month){
+        $this->expiration_month = $_expiration_month;
     }
 
-    public function setExpiration_y($_expiration_year){
-        $this->expiration_y = $_expiration_year;
+    public function setExpiration_year($_expiration_year){
+        $this->expiration_year = $_expiration_year;
     }
 
 

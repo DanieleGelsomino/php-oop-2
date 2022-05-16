@@ -5,6 +5,7 @@ class Product {
     private $brand;
     private $price;
     private $description;
+    public $img;
 
 function __construct($_name, $_price) {
     $this->name = $_name;
@@ -29,6 +30,10 @@ public function setDescription($_description) {
     $this->description = $_description;
 }
 
+public function setImg($_img) {
+    $this->img = $_img;
+}
+
 //GET
 
 public function getName() {
@@ -46,6 +51,10 @@ public function getBrand() {
 public function getDescription() {
     return  $this->description;
   }  
+
+public function getImg() {
+   return $this->img;
+}  
 
 }
 
