@@ -11,7 +11,7 @@
 */
 
 
-require_once __DIR__ . '/classes/user.php';
+require_once __DIR__ . '/classes/registeredUser.php';
 require_once __DIR__ . '/classes/product.php';
 require_once __DIR__ . '/classes/creditCard.php';
 
@@ -20,14 +20,40 @@ $new_product = new Product("Collare antiparassitario", 25);
 $new_product->setBrand("Scalibor");
 // $new_product->setDescription("Scalibor protegge il tuo cane dai pappataci per 12 mesi, da zecche e zanzare per 6 mesi e dalle pulci per 4 mesi. Non avrai dunque bisogno di frequenti applicazioni e non rischierai dimenticanze. Applica il collare Scalibor al tuo cane appena inizia la bella stagione per proteggerlo dalla puntura dei pappataci e ridurre il rischio di contrarre la leishmaniosi. Il bagno non pregiudica l’attività del collare. Scalibor può essere utilizzato nei cuccioli di età superiore alle 7 settimane, in gravidanza e in lattazione.");
 
-var_dump($new_product);
+//var_dump($new_product);
 
 //User
 $new_user = new User('Lucio','Melis');
 $new_user->setCreditCard(729462746047, 744, 6, 2026);
 
-var_dump($new_user);
+//var_dump($new_user);
+
+//Registered User
+$new_registeredUser = new RegisteredUser('Stefano', 'Piotti','Utente registrato');
+$new_registeredUser->setDiscount(20);
+//echo $new_registeredUser->getDiscount();
+//var_dump($new_registeredUser);
 
 
 ?>
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600&family=Montserrat:wght@100;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PHP OOP 2</title>
+</head>
+<body>
+    <div class="e-commerce">
+        <h1>PET SHOP</h1>
+    </div>
+</body>
+</html>
 

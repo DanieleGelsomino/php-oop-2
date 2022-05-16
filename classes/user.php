@@ -34,6 +34,11 @@ class User {
     $this->mail = $_email;
     }
 
+    public function setDiscount($_discount){
+        $this->discount = $_discount;
+        }
+    
+
 
     //GET
     public function getFirstname(){
